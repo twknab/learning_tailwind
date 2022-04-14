@@ -1,27 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Exploring Tailwind</title>
-  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
+
   <body>
-    <div class="prose container mx-auto">
-      <h1 class="text-center font-bold">Buy this great tool</h1>
-      <p class="italic">Trusted by hundreds of companies</p>
-      <ul class="font-semibold">
-        <li>Apple</li>
-        <li>Google</li>
-        <li>Meta</li>
-      </ul>
-      <button class="text-center shadow-sm bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-max mx-auto">Find
-        out more</button>
+    <div class="container mx-auto">
+      <div class="mb-4 mt-15">
+        <div class="w-full columns-1">
+          <h1 class="text-center font-bold mt-8 mb-6">Buy this great tool</h1>
+          <p class="italic text-center">Trusted by hundreds of companies</p>
+          <ul class="font-semibold text-center my-12">
+            <li class="inline mx-4">Apple</li>
+            <li class="inline mx-4">Google</li>
+            <li class="inline mx-4">Meta</li>
+          </ul>
+          <button id="findMoreButton"
+            class="block text-center shadow-sm bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-max mx-auto">Find
+            out more</button>
+        </div>
+      </div>
     </div>
+
+    <script>
+      document.getElementById("findMoreButton").addEventListener("click", onButtonClick);
+
+      function onButtonClick() {
+        alert("Clicked!");
+      }
+    </script>
   </body>
 
-  </html>
+</html>
 </body>
+
 </html>
